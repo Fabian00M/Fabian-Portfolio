@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabian Y. Martinez Camargo - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light Gray */
+            color: #333;
+        }
+
+        header {
+            background-color: #001f3f; /* Navy Blue */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff; /* White */
+            margin: 0;
+            font-size: 2em;
+        }
+
+        h2, h3 {
+            color: #001f3f; /* Navy Blue */
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #001f3f; /* Navy Blue */
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            background-color: #001f3f; /* Navy Blue */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .home-button:hover {
+            color: #F30000; /* Red */
+        }
+
+        .preview-button {
+            background-color: #F30000; /* Red */
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .preview-button:hover {
+            background-color: #001f3f; /* Navy Blue */
+        }
+
+        .preview-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .preview-section {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div onclick="showSection('home')" class="home-button">Home</div>
+        <h1>Fabian Y. Martinez Camargo</h1>
+        <p>Computer Science Major</p>
+        <p>Mathematics Minor</p>
+        <p>3.5 GPA</p>
+        <p>Full Stack developer</p>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('projects')">Projects & Skills</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+        <p>Welcome to my Portfolio!</p>
+        <p>Direct Home to find a preview of my information!</p>
+
+    </nav>
+
+    <section id="home">
+        <p>Welcome to my Portfolio!</p>
+        <p>Here you will find a preview of my information!</p>
+
+        <div class="preview-container">
+            <div class="preview-section">
+                <button class="preview-button" onclick="showSection('about')">About Me</button>
+                <p>Learn more about me and my background.</p>
+            </div>
+            <div class="preview-section">
+                <button class="preview-button" onclick="showSection('projects')">Projects & Skills</button>
+                <p>Explore my latest coding projects.</p>
+            </div>
+            <div class="preview-section">
+                <button class="preview-button" onclick="showSection('contact')">Contact Me</button>
+                <p>Get in touch with me for exciting opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <img src="/fotos/yo.jpg" alt="Your Name" width="400">
+        <h2>About Me</h2>
+        <p>Greetings! I am Fabian Yadid Martinez Camargo, a dedicated computer science student from Bogotá, Colombia with a passion for coding and technologies.</p>
+        <p>My proficiency extends to Python, Java, C++, SQL, and HTML allowing me to create aesthetically pleasing and robust websites. In the realm of software architecture, I specialize in developing efficient and scalable systems.</p>
+        <p>My commitment to continuous learning drives me to explore the latest technologies and programming paradigms. Beyond coding, I have a keen interest in languages, being a bilingual international student from Bogota, Colombia.</p>
+        <p>Currently engaged in Baker University, I approach assignments and examinations as opportunities for intellectual growth and better life opportunities.</p>
+        <p>I am enthusiastic about the prospect of contributing my skills and knowledge to a dynamic team.</p>
+        <p>Thank you for considering my application. I look forward to the possibility of discussing how my technical expertise aligns with your organization's goals.</p>
+        <h2>Education</h2>
+        <ol>
+            <li>Baker University 2022-2024</li>
+            <li>McKendree University 2020-2022</li>
+            <li>Colegio Agustiniano Ciudad Salitre (Primary, Elementary, Middle School, High School)</li>
+        </ol>
+        <h2>Experience</h2>
+        <h3>BACKEND/API DEVELOPER | Iridian (June 2023-August 2023)</h3>
+        <ul>
+            <li>Worked at Iridian, developing integration APIs with external Spring Boot and Symfony platforms.</li>
+        </ul>
+        <h3>RESIDENT ASSISTANT | McKendree University (2021-2022) </h3>
+        <ul>
+            <li>Proactively managed up to 12 facilities for the office of residence life.</li>
+            <li>Created a safe and comfortable environment for 48 campus residents.</li>
+            <li>Organized and prioritized issues needing to be addressed in staff meetings and followed up with superiors and other staff members to identify the best solutions.</li>
+            <li>Successfully completed multiple complex projects within tight deadlines, demonstrating strong time management skills.</li>
+        </ul>
+        <h3>EVENT STAFF | McKendree University (2021-2022)</h3>
+        <ul>
+            <li>Helped event schedules run perfectly, supporting multiple collegiate teams.</li>
+            <li>Staffed up to 6 events hosting up to 300 people per semester.</li>
+            <li>Assisted in designing, planning, and executing a full-scale university event, including training volunteers, preparing materials, and communicating with external vendors.</li>
+        </ul>
+        <h3>HONORS AND ACTIVITIES</h3>
+        Iridian Internship (Summer 2023)<br/>
+        Tennis Conference Champions (Spring 2022)<br/>
+        Robotics Team (Spring 2022) <br/>
+        Academic Excellence Celebration, Robotics Team (Spring 2022)<br/>
+        Dean's List (Spring 2021, Fall 2021) <br/>
+        Phi Eta Sigma National Honor Society (2021-Present) <br/>
+        <h2>LANGUAGES</h2>
+        <ul>
+            <li>Spanish: Native speaker</li>
+            <li>English: Level C1</li>
+        </ul>
+    </section>
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+        <li><h3><a href="./public/books-ranking.html">Books Ranking Project</a></h3>
+            <img src="./fotos/Books.png" height="50">
+        </li>
+        <li>
+            <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
+            <img src="./fotos/Birthday.PNG" height="50">
+        </li>
+        <li>
+            <h3><a href="./public/portfolio/index.html">Portfolio Project</a></h3>
+            <img src="./fotos/Captura.PNG" height="50">         
+        </li>
+        <li>
+            <h3><a href="./public/mygame/main.lua">Lua Storybook</a></h3>
+            <img src="./fotos/storybook.PNG" height="50">
+        </li>
+        </ol>
+        <h2>Skills</h2>
+        <ul>
+            HTML<br/>
+            C++ <br/>
+            Python<br/>
+            JAVA<br/>
+            Lua<br/>
+            R<br/>
+            SQL<br/>
+            MS Office (Word, Outlook, Power Point, Access)<br/>
+        </ul>
+        
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Phone Number: (417)726-2765</p>
+        <p>Email: fabianyadid@yahoo.es</p>
+        <p>WhatsApp: +57 (319)206-4090.</p>
+        <p><a href="//www.linkedin.com/in/fabian-martinez-camargo-32357427b">LinkdIn</a></p>          
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fabian Yadid Martinez Camargo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
